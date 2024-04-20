@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+    <title>Tailwind project</title>
+    <link rel="stylesheet" href="output.css"> 
+</head>
+<body>
+   <nav class="p-3 flex justify-between items-center">
+    <a href="#" class="flex gap-2 items-center">
+        <img src="../img/Logo.png" alt="Logo" class="w-20 h-20 object-cover"> 
+    </a>
+    <div id="nav-menu" class="hidden lg:flex gap-8 justify-between">
+        <a href="#" class="font-medium hover:text-primary">Home</a>
+        <a href="#" class="font-medium hover:text-primary">About Me</a>
+        <a href="#" class="font-medium hover:text-primary">Contact</a>
+        <a href="#" class="font-medium hover:text-primary">Portfolio</a>
+    </div>
+    <button class="hidden lg:flex items-center gap-2 border border-gray-600 px-6 py-2 rounded-md">
+       Web Developer
+       <i class="fa-solid fa-arrow-right"></i>
+    </button>
+    <button class="p-2 lg:hidden" onclick="handleMenu()">
+        <i class="fa-solid fa-bars text-gray-600"></i>
+    </button>
+   </nav>
+   <div id="nav-dialog" class="hidden fixed lg:hidden bg-white inset-0 p-3">
+    <div id="nav-bar" class="flex justify-between">
+        <a href="#" class="flex gap-2 items-center">
+            <img src="../img/Logo.png" alt="Logo" class="w-20 h-20 object-cover"> 
+        </a>
+        <button class="p-2 lg:hidden" onclick="handleMenu()">
+            <i class="fa-solid fa-xmark text-gray-600"></i>
+        </button>
+    </div>
+    <div class="mt-6 flex-col">
+        <a href="#" class="font-medium m-3 p-3 hover:bg-gray-200 block rounded-md">Home</a>
+        <a href="#" class="font-medium m-3 p-3 hover:bg-gray-200 block rounded-md">About Me</a>
+        <a href="#" class="font-medium m-3 p-3 hover:bg-gray-200 block rounded-md">Contact</a>
+        <a href="#" class="font-medium m-3 p-3 hover:bg-gray-200 block rounded-md">Portfolio</a>
+    </div>
+    <div class="h-[1px] bg-gray-400"></div>
+    <button class="mt-6 flex w-full p-3 items-center gap-2 border px-6 py-4  hover:bg-gray-200 rounded-lg">
+        Web Developer
+        <i class="fa-solid fa-arrow-right"></i>
+    </button>
+   </div>
+</body>
+<script src="script.js"></script>
+</html>
