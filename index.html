@@ -10,7 +10,7 @@
 <body>
 
     <!-- Navbar -->
-   <nav class="p-3 flex justify-between items-center">
+   <nav class="p-3 flex justify-between items-center bg-white fixed top-0 left-0 right-0 shadow-md rounded-sm z-20">
 
     <a href="#" class="flex gap-2 items-center">
         <img src="../img/Aayush_Logo.png" alt="Logo" class="w-40 h-20 object-cover rounded-md"> 
@@ -21,10 +21,13 @@
         <a href="#" class="font-medium hover:text-primary">Contact Me</a>
         <a href="#" class="font-medium hover:text-primary">My project</a>
     </div>
-    <button class="hidden lg:flex items-center gap-2 border border-gray-600 px-6 py-2 rounded-md transition duration-3000 ease-in-out hover:bg-sky-400 hover:text-white">
-        Web Developer
-        <i class="fa-solid fa-arrow-right"></i>
-    </button>
+    <div class="hidden lg:flex gap-8 mr-4 ">
+        <a href="https://github.com/Aayush104"> <i class="fa-brands fa-github text-xl hover:text-violet-800"></i></a>
+        <a href="https://www.facebook.com/aayush.chhetri.9406/"> <i class="fa-brands fa-facebook text-xl  hover:text-blue-800"></i></a>
+        <a href="https://www.linkedin.com/in/aayush-adhikari-500900268/"> <i class="fa-brands fa-linkedin text-xl  hover:text-blue-500"></i></a>
+        <a href="https://www.instagram.com/_aayush.1086/"> <i class="fa-brands fa-instagram text-xl  hover:text-pink-700"></i></a>
+    </div>
+   
     
      
     <button class="p-2 lg:hidden" onclick="handleMenu()">
@@ -46,20 +49,25 @@
             <a href="#" class="font-medium m-3 p-3 hover:bg-gray-200 block rounded-md">My Project</a>
         </div>
         <div class="h-[1px] bg-gray-400"></div>
-        <button class="mt-6 flex w-full p-3 items-center gap-2 border px-6 py-4  hover:bg-gray-200 rounded-lg">
-            Web Developer
-            <i class="fa-solid fa-arrow-right"></i>
-        </button>
+        <div class="ml-4 flex gap-3 mt-4">
+            <a href="https://github.com/Aayush104"> <i class="fa-brands fa-github text-xl  hover:text-violet-800"></i></a>
+           <a href="https://www.facebook.com/aayush.chhetri.9406/"> <i class="fa-brands fa-facebook text-xl  hover:text-blue-800"></i></a>
+           <a href="https://www.linkedin.com/in/aayush-adhikari-500900268/"> <i class="fa-brands fa-linkedin text-xl  hover:text-blue-500"></i></a>
+           <a href="https://www.instagram.com/_aayush.1086/"> <i class="fa-brands fa-instagram text-xl  hover:text-pink-700"></i></a>
+           
+           
+           
+        </div>
        </div>
    </nav>
 
    <!-- Main section -->
-   <main>
+   <main class="mt-16">
     <!-- hero section -->
-    <div id="hero" class="min-h-screen bg-slate-50  flex  justify-between ">
+    <div id="hero" class="min-h-screen flex  justify-between ">
         <div class="mt-12 px-20 flex flex-col w-full items-center lg:flex-row lg:justify-between lg:-mt-12">
             <div class="lg:w-1/2 w-full text-center">
-                <p class="text-blue-500 font-medium lg:text-left capitalize">Hello, It's ME</p>
+                <p class="text-blue-500 font-medium lg:ml-4 lg:text-left capitalize">Hello, It's ME</p>
                 <P class=" text-xl lg:text-2xl font-bold lg:text-left">Aayush Adhikari</P>
                 <p class="text-gray-600 text-center lg:text-justify lg:leading-8 text-base">
                     I am deeply committed to mastering both front and back-end development, aiming to create groundbreaking digital solutions that redefine innovation.
@@ -76,6 +84,26 @@
         </div>
       
     </div>
+
+    <!-- about -->
+    <div class="ml-section mb-section">
+        <h2 class="text-bt font-normal text-cyan-500 uppercase">About Me</h2>
+        <p class="text-heading font-serif capitalize">Who is Aayush?</p>
+<div class="flex justify-between gap-4">
+    <img src="../img/image.png" class="">
+    <div class="flex flex-col">
+        <span>Hi there! I'm a Full-stack Developer driven by curiosity and passion</span>
+        <span>I am passionate about making  about making digital products both technically robust and visually appealing. I love creating smooth user experiences, designing beautiful interfaces, and writing clean, accessible code. I strongly believe that simplicity is key.</span>
+      <span>I'm currently pursuing my graduate degree at Itahari International College. As a self-taught developer, I have an unyielding enthusiasm for coding. I enjoy diving into challenges and finding innovative solutions. Let's collaborate and bring ideas to life! feel free to reach me I dont bite 🤗😜</span>
+
+
+
+    </div>
+</div>
+    </div>
+    
+
+    
    </main>
   
 </body>
