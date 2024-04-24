@@ -14,9 +14,10 @@ module.exports = {
         'xlbt':'1.8rem',
         'bt':'1.2rem',  
         'lg': '2rem',  
-        'xl': '2.5rem',
+        'xl': '2.3rem',
+        'icons':'1.6rem',
         'heading':'2.8rem' ,   
-        '2xl': '4.5rem',    
+        '2xl': '3.8rem',    
         '3xl': '1.875rem',  
         
       },
@@ -25,7 +26,13 @@ module.exports = {
         'lg': "25rem"
       },
       margin:{
-        'section':'4rem'
+        'section':'5rem'
+      },
+      backgroundImage:{
+        "hero":"url('/img/bg.png')"
+      },
+      height:{
+        "full":"85vh",
       }
     },
   },
