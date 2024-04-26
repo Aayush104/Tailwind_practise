@@ -10,13 +10,15 @@ module.exports = {
       fontSize: {
         'xs': '0.75rem',    
         'sm': '0.875rem',   
-        'base': '1.1rem',
+        'base': '1.3rem',
         'xlbt':'1.8rem',
         'bt':'1.2rem',  
         'lg': '2rem',  
-        'xl': '2.3rem',
-        'icons':'1.6rem',
-        'heading':'2.8rem' ,   
+        'xl': '2.5rem',
+        'icons':'1.5rem',
+        'heading':'2.8rem',
+        '16px':'1.3rem',
+        'main_head':'3.5rem',  
         '2xl': '3.8rem',    
         '3xl': '1.875rem',  
         
@@ -26,7 +28,8 @@ module.exports = {
         'lg': "25rem"
       },
       margin:{
-        'section':'5rem'
+        'section':'5rem',
+        'section1': '8rem'
       },
       backgroundImage:{
         "hero":"url('/img/bg.png')"
