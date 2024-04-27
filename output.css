@@ -592,9 +592,18 @@ video {
   margin-right: 5rem;
 }
 
+.mx-sx {
+  margin-left: 2.5rem;
+  margin-right: 2.5rem;
+}
+
 .my-0 {
   margin-top: 0px;
   margin-bottom: 0px;
+}
+
+.mb-8 {
+  margin-bottom: 2rem;
 }
 
 .mb-section {
@@ -637,12 +646,12 @@ video {
   margin-top: 2rem;
 }
 
-.mt-section {
-  margin-top: 5rem;
+.mb-6 {
+  margin-bottom: 1.5rem;
 }
 
-.mt-section1 {
-  margin-top: 8rem;
+.mb-4 {
+  margin-bottom: 1rem;
 }
 
 .block {
@@ -665,6 +674,26 @@ video {
   height: 1px;
 }
 
+.h-4\/6 {
+  height: 66.666667%;
+}
+
+.h-5\/6 {
+  height: 83.333333%;
+}
+
+.h-2\/6 {
+  height: 33.333333%;
+}
+
+.h-1\/6 {
+  height: 16.666667%;
+}
+
+.h-1\/5 {
+  height: 20%;
+}
+
 .max-h-\[180rem\] {
   max-height: 180rem;
 }
@@ -673,8 +702,8 @@ video {
   min-height: 40rem;
 }
 
-.w-4\/6 {
-  width: 66.666667%;
+.w-1\/2 {
+  width: 50%;
 }
 
 .w-40 {
@@ -683,6 +712,14 @@ video {
 
 .w-full {
   width: 100%;
+}
+
+.w-4\/6 {
+  width: 66.666667%;
+}
+
+.w-5\/6 {
+  width: 83.333333%;
 }
 
 .flex-col {
@@ -808,6 +845,22 @@ video {
   font-size: 2.5rem;
 }
 
+.text-3xl {
+  font-size: 1.875rem;
+}
+
+.text-16px {
+  font-size: 1.3rem;
+}
+
+.text-1rem {
+  font-size: 1rem;
+}
+
+.text-xs {
+  font-size: 0.9rem;
+}
+
 .font-bold {
   font-weight: 700;
 }
@@ -848,6 +901,11 @@ video {
 .text-emerald-600 {
   --tw-text-opacity: 1;
   color: rgb(5 150 105 / var(--tw-text-opacity));
+}
+
+.text-gray-500 {
+  --tw-text-opacity: 1;
+  color: rgb(107 114 128 / var(--tw-text-opacity));
 }
 
 .text-gray-600 {
@@ -930,9 +988,51 @@ video {
   color: rgb(91 33 182 / var(--tw-text-opacity));
 }
 
-@media (min-width: 768px) {
-  .md\:w-2\/4 {
+@media (min-width: 640px) {
+  .sm\:w-1\/2 {
     width: 50%;
+  }
+
+  .sm\:w-1\/3 {
+    width: 33.333333%;
+  }
+
+  .sm\:w-8\/12 {
+    width: 66.666667%;
+  }
+
+  .sm\:w-6\/12 {
+    width: 50%;
+  }
+
+  .sm\:w-5\/12 {
+    width: 41.666667%;
+  }
+
+  .sm\:w-4\/12 {
+    width: 33.333333%;
+  }
+
+  .sm\:w-7\/12 {
+    width: 58.333333%;
+  }
+
+  .sm\:w-2\/6 {
+    width: 33.333333%;
+  }
+
+  .sm\:w-4\/6 {
+    width: 66.666667%;
+  }
+
+  .sm\:w-3\/6 {
+    width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .md\:mt-lg_section {
+    margin-top: 9rem;
   }
 
   .md\:text-bt {

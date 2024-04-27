@@ -8,7 +8,7 @@ module.exports = {
       
       },
       fontSize: {
-        'xs': '0.75rem',    
+        'xs': '0.9rem',    
         'sm': '0.875rem',   
         'base': '1.3rem',
         'xlbt':'1.8rem',
@@ -20,7 +20,8 @@ module.exports = {
         '16px':'1.3rem',
         'main_head':'3.5rem',  
         '2xl': '3.8rem',    
-        '3xl': '1.875rem',  
+        '3xl': '1.875rem', 
+        '1rem':'1rem' 
         
       },
       width:{
@@ -28,8 +29,10 @@ module.exports = {
         'lg': "25rem"
       },
       margin:{
+        'sx': '2.5rem',
         'section':'5rem',
-        'section1': '8rem'
+        'section1': '8rem',
+        'lg_section': "9rem"
       },
       backgroundImage:{
         "hero":"url('/img/bg.png')"
