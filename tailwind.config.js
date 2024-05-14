@@ -3,6 +3,16 @@ module.exports = {
   content: ["./index.html"],
   theme: {
     extend: {
+      screens: {
+        'tablet': '640px',
+        
+  'mid':'901px',
+        'laptop': '1024px',
+        
+  
+        'desktop': '1280px',
+       
+      },
       colors:{
         "primary": '#2a69e3',
       
@@ -17,16 +27,20 @@ module.exports = {
         'xl': '2.5rem',
         'icons':'1.5rem',
         'heading':'2.8rem',
-        '16px':'1.3rem',
+        '1.3':'1.3rem',
+        'pro_head': '1.652rem',
         'main_head':'3.5rem',  
         '2xl': '3.8rem',    
         '3xl': '1.875rem', 
-        '1rem':'1rem' 
+        '1rem':' 1.008rem' ,
+        "par":'1.150rem'
         
       },
       width:{
         'xs': '4rem',
-        'lg': "25rem"
+        'img_width': '100px',
+        'lg': "25rem",
+       
       },
       margin:{
         'sx': '2.5rem',
@@ -39,6 +53,9 @@ module.exports = {
       },
       height:{
         "full":"85vh",
+      },
+      boxShadow:{
+        "c_box":"0 0 10px rgba(0,0,0,0.2)"
       }
     },
   },
