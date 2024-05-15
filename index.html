@@ -9,6 +9,8 @@
 </head>
 <body>
 
+
+  
     <!-- Navbar -->
    <nav class="p-3 flex justify-between items-center bg-white fixed top-0 left-0 right-0 shadow-md rounded-sm z-20">
 
@@ -181,28 +183,42 @@ I'm a Web Developer focused on creating and handling websites and web apps that 
 <!-- Proejcts ection ends -->
 
 <!-- Contact -->
-<div class="mt-section1 mb-section bg-[url('/img/bg.png')] max-h-[180rem] min-h-[60rem] ">
+<div class="mt-section1  bg-[url('/img/bg.png')] max-h-[180rem] min-h-[60rem] ">
    
-<div class="flex items-center justify-center flex-col min-h-[60rem] gap-24">
+<div class="flex items-center justify-center flex-col min-h-[60rem] gap-16">
 
     <div class="text-center flex flex-col">
         <h2 class="text-lg uppercase md:text-xl font-bold">Contact</h2>
                 
         <div class="flex flex-col">
-            <span class=" text-1rem text-gray-500  leading-6 mt-1 md:text-bt  ">As an self-taught developer, I am proud to showcase  projects  </span>
-            <span class=" text-1rem text-gray-500 leading-6 mt-1 md:text-bt  "> I have independently completed. </span>
+            <span class=" text-1rem   leading-6 mt-1 md:text-bt  ">As an self-taught developer, I am proud to showcase  projects  </span>
+            <span class=" text-1rem leading-6 mt-1 md:text-bt  "> I have independently completed. </span>
         </div>
       
     </div>
-
-    <div class="bg-white min-h-[35rem] w-lg shadow-c_box rounded-md p-8">
-
-       <div class="flex flex-col gap-1">
-        <label class="text-sm font-semibold text-gray-600">Name</label>
-        <input type="text"  placeholder="Enter Your Name"   class="bg-gray-200 p-4 rounded-md">
-       </div>
+    <div class="container mx-auto max-w-screen-md px-4">
+        <form class="bg-white min-h-[35rem] shadow-c_box rounded-md p-8 flex flex-col gap-10">
+            <div class="flex flex-col gap-1">
+                <label for="name" class="text-sm font-bold text-gray-600">Name</label>
+                <input type="text" id="name" placeholder="Enter Your Name" class="bg-neutral-100 font-semibold outline-none px-4 py-5 rounded-md w-full">
+            </div>
+            <div class="flex flex-col gap-1">
+                <label for="email" class="text-sm font-bold text-gray-600">Email</label>
+                <input type="email" id="email" placeholder="Enter Your Email" class="bg-neutral-100 font-semibold outline-none px-4 py-5 rounded-md w-full">
+            </div>
+            <div class="flex flex-col gap-1">
+                <label for="message" class="text-sm font-bold text-gray-600">Message</label>
+                <textarea id="message" class="bg-neutral-100 font-semibold outline-none p-4 rounded-md w-full h-52 resize-none" placeholder="Enter Your Message"></textarea>
+            </div>
+            <div class="flex justify-end">
+                <button type="submit" class="bg-cyan-500 text-white font-semibold py-4 px-20 rounded-md shadow-md hover:-translate-y-1 ease-in-out duration-500 hover:bg-sky-500 uppercase ">Submit</button>
+            </div>
+          
+        </form>
     </div>
-
+    
+   
+    
    
   
 
@@ -214,6 +230,63 @@ I'm a Web Developer focused on creating and handling websites and web apps that 
 
 <!-- Contact section ends -->
 
+<!-- Footer section Starts -->
+<div class="h-[35rem] bg-gradient-to-br from-cyan-700 to bg-sky-800 text-white md:h-[24rem]">
+    <div class="flex flex-col md:flex-row gap-8 px-8 pt-16 md:justify-around">
+
+        <div class="flex flex-col gap-4">
+            <h2 class="font-bold text-base uppercase md:text-center md:text-icons">Social</h2>
+            <div class="flex gap-4 mr-4 md:gap-6">
+                <a href="https://github.com/Aayush104"> <i class="fa-brands fa-github text-xl hover:text-violet-500"></i></a>
+                <a href="https://www.facebook.com/aayush.chhetri.9406/"> <i class="fa-brands fa-facebook text-xl  hover:text-blue-900"></i></a>
+                <a href="https://www.linkedin.com/in/aayush-adhikari-500900268/"> <i class="fa-brands fa-linkedin text-xl  hover:text-blue-800"></i></a>
+                <a href="https://www.instagram.com/_aayush.1086/"> <i class="fa-brands fa-instagram text-xl  hover:text-pink-700"></i></a>
+            </div>
+        </div>
+        
+        <div class="flex flex-col gap-4">
+            <h2 class="font-bold text-base uppercase md:text-center md:text-icons">Links</h2>
+            <div class="flex gap-4 md:flex-col">
+                <a href="#" class="font-medium   hover:text-black duration-300 text-1rem block rounded-md"><i class="fa-solid fa-arrow-right hidden md:inline-block mr-2"></i>Home</a>
+                <a href="#" class="font-medium  hover:text-black duration-300 text-1rem block rounded-md"><i class="fa-solid fa-arrow-right  hidden md:inline-block mr-2"></i>About Me</a>
+                <a href="#" class="font-medium   hover:text-black duration-300 text-1rem block rounded-md"><i class="fa-solid fa-arrow-right  hidden md:inline-block mr-2"></i>Contact</a>
+                <a href="#" class="font-medium   hover:text-black duration-300 text-1rem block rounded-md"><i class="fa-solid fa-arrow-right  hidden md:inline-block mr-2"></i>My Project</a>
+            </div>
+        </div>
+
+        <div class="flex flex-col gap-4">
+            <h2 class="font-bold text-base uppercase">Have a Question?</h2>
+            <div class="flex flex-col gap-4">
+                <div class="flex gap-4 items-end">
+                    <i class="fa-solid fa-location-dot text-base"></i>
+                    <span class="text-1rem font-semibold"> Duhabi-05, Sunsari</span>
+                </div>
+                <div class="flex gap-4 items-end">
+                    <i class="fa-solid fa-phone"></i>
+                    <span class="text-1rem font-semibold"> +9779827102964</span>
+                </div>
+                <div class="flex gap-4 items-end">
+                    <i class="fa-solid fa-envelope"></i>
+                    <span class="text-1rem font-semibold">aayushadhikari601@gmail.com</span>
+                </div>
+            </div>
+        </div>
+        
+        
+
+    </div>
+    <!-- Horizontal Line -->
+    <div class="mt-8 flex flex-col gap-6">
+        <div class="border-b pt-4 mx-8 md:mx-36 border-gray-300"></div>
+        
+        <!-- Copyright Notice -->
+        <p class="text-xs text-center md:text-1rem">Copyright © 2024 All rights reserved | ❤️ From Aayush Adhikari</p>
+    </div>
+ 
+</div>
+
+
+<!-- Footer section ends -->
 
     
    </main>
