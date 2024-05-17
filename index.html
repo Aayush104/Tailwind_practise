@@ -4,7 +4,13 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
-    <title>Tailwind project</title>
+
+    <!-- Toaster -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/css/toastr.min.css">
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/toastr.js/latest/js/toastr.min.js"></script>
+    <!-- Toaster imports end -->
+    <title>Aayush Adhikari</title>
     <link rel="stylesheet" href="output.css"> 
 </head>
 <body>
@@ -200,7 +206,7 @@ I'm a Web Developer focused on creating and handling websites and web apps that 
         <form class="bg-white min-h-[35rem] shadow-c_box rounded-md p-8 flex flex-col gap-10">
             <div class="flex flex-col gap-1">
                 <label for="name" class="text-sm font-bold text-gray-600">Name</label>
-                <input type="text" id="name" placeholder="Enter Your Name" class="bg-neutral-100 font-semibold outline-none px-4 py-5 rounded-md w-full">
+                <input type="text" id="names" placeholder="Enter Your Name" class="bg-neutral-100 font-semibold outline-none px-4 py-5 rounded-md w-full" >
             </div>
             <div class="flex flex-col gap-1">
                 <label for="email" class="text-sm font-bold text-gray-600">Email</label>
@@ -211,7 +217,7 @@ I'm a Web Developer focused on creating and handling websites and web apps that 
                 <textarea id="message" class="bg-neutral-100 font-semibold outline-none p-4 rounded-md w-full h-52 resize-none" placeholder="Enter Your Message"></textarea>
             </div>
             <div class="flex justify-end">
-                <button type="submit" class="bg-cyan-500 text-white font-semibold py-4 px-20 rounded-md shadow-md hover:-translate-y-1 ease-in-out duration-500 hover:bg-sky-500 uppercase ">Submit</button>
+                <button type="submit" class="bg-cyan-500 text-white font-semibold py-4 px-20 rounded-md shadow-md hover:-translate-y-1 ease-in-out duration-500 hover:bg-sky-500 uppercase " id="sbmt_btn">Submit</button>
             </div>
           
         </form>

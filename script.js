@@ -35,3 +35,31 @@ document.addEventListener('click', (e) => {
       handleMenu(document.getElementById('contact'));
    }
 });
+
+const btn = document.getElementById('sbmt_btn');
+
+btn.addEventListener('click', async (e) => {
+    e.preventDefault();
+    const names = document.getElementById('names').value;
+    const email = document.getElementById('email').value;
+    const message = document.getElementById('message').value;
+
+    const response = await fetch('http://localhost:3000/send', {
+        method: 'POST',
+        headers: {
+            'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ names, email, message })
+    });
+
+    if (response.status === 400) {
+      toastr.error('Please fill all inpuuts');
+    } else if (response.status === 200) {
+      toastr.success('Registration Successful');
+        document.getElementById('names').value = '';
+        document.getElementById('email').value = '';
+        document.getElementById('message').value = '';
+    } else {
+      toastr.error('There was an error with your submission');
+    }
+});
