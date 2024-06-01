@@ -1,5 +1,7 @@
 const backendUrl = 'https://aayush-adhikari.onrender.com'; // Change this to your actual backend URL
 
+
+const navDialog = document.getElementById('nav-dialog');
 const handleMenu = () => {
     navDialog.classList.toggle('hidden');
 };
