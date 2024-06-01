@@ -30,7 +30,7 @@ document.addEventListener('click', (e) => {
       scrollToSection(document.querySelector('.Home'));
       handleMenu(document.getElementById('home'));
       
-   } else if (targetClassList.contains('nav_contact') || targetClassList.contains('foot_contact')) {
+   } else if (targetClassList.contains('nav_contact') || targetClassList.contains('foot_contact') || targetClassList.contains('btn_contact' )) {
       scrollToSection(document.querySelector('.Contact'));
       handleMenu(document.getElementById('contact'));
    }

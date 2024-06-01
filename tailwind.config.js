@@ -9,7 +9,7 @@ module.exports = {
   'mid':'901px',
         'laptop': '1024px',
         
-  
+  'lg_mid':'1000px',
         'desktop': '1280px',
        
       },

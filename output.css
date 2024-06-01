@@ -576,6 +576,12 @@ video {
   }
 }
 
+@media (min-width: 1000px) {
+  .container {
+    max-width: 1000px;
+  }
+}
+
 @media (min-width: 1024px) {
   .container {
     max-width: 1024px;
@@ -703,6 +709,10 @@ video {
   margin-top: 8rem;
 }
 
+.mt-20 {
+  margin-top: 5rem;
+}
+
 .block {
   display: block;
 }
@@ -719,6 +729,10 @@ video {
   height: 5rem;
 }
 
+.h-24 {
+  height: 6rem;
+}
+
 .h-52 {
   height: 13rem;
 }
@@ -729,6 +743,22 @@ video {
 
 .h-\[35rem\] {
   height: 35rem;
+}
+
+.h-36 {
+  height: 9rem;
+}
+
+.h-16 {
+  height: 4rem;
+}
+
+.h-8 {
+  height: 2rem;
+}
+
+.h-12 {
+  height: 3rem;
 }
 
 .max-h-\[180rem\] {
@@ -1137,11 +1167,6 @@ video {
   background-color: rgb(14 165 233 / var(--tw-bg-opacity));
 }
 
-.hover\:text-black:hover {
-  --tw-text-opacity: 1;
-  color: rgb(0 0 0 / var(--tw-text-opacity));
-}
-
 .hover\:text-blue-500:hover {
   --tw-text-opacity: 1;
   color: rgb(59 130 246 / var(--tw-text-opacity));
@@ -1167,6 +1192,11 @@ video {
   color: rgb(42 105 227 / var(--tw-text-opacity));
 }
 
+.hover\:text-teal-300:hover {
+  --tw-text-opacity: 1;
+  color: rgb(94 234 212 / var(--tw-text-opacity));
+}
+
 .hover\:text-violet-500:hover {
   --tw-text-opacity: 1;
   color: rgb(139 92 246 / var(--tw-text-opacity));
@@ -1175,31 +1205,6 @@ video {
 .hover\:text-violet-800:hover {
   --tw-text-opacity: 1;
   color: rgb(91 33 182 / var(--tw-text-opacity));
-}
-
-.hover\:text-teal-500:hover {
-  --tw-text-opacity: 1;
-  color: rgb(20 184 166 / var(--tw-text-opacity));
-}
-
-.hover\:text-pink-800:hover {
-  --tw-text-opacity: 1;
-  color: rgb(157 23 77 / var(--tw-text-opacity));
-}
-
-.hover\:text-pink-500:hover {
-  --tw-text-opacity: 1;
-  color: rgb(236 72 153 / var(--tw-text-opacity));
-}
-
-.hover\:text-teal-400:hover {
-  --tw-text-opacity: 1;
-  color: rgb(45 212 191 / var(--tw-text-opacity));
-}
-
-.hover\:text-teal-300:hover {
-  --tw-text-opacity: 1;
-  color: rgb(94 234 212 / var(--tw-text-opacity));
 }
 
 @media (min-width: 640px) {
@@ -1285,12 +1290,16 @@ video {
     display: flex;
   }
 
+  .mid\:h-1\/5 {
+    height: 20%;
+  }
+
   .mid\:h-3\/5 {
     height: 60%;
   }
 
-  .mid\:w-7\/12 {
-    width: 58.333333%;
+  .mid\:w-6\/12 {
+    width: 50%;
   }
 
   .mid\:items-center {
