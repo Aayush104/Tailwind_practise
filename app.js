@@ -3,11 +3,14 @@ const app = express();
 const nodemailer = require('nodemailer');
 const cors = require('cors');
 
-app.set("view engine", 'ejs')
+
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
-app.use(cors());
+app.use(cors({
+    origin: 'https://aayush-adhikari-08.onrender.com' // Change to your actual frontend domain
+}));
+
 
 app.post('/send', async (req, res) => {
     const { names, email, message } = req.body;
