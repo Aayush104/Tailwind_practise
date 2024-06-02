@@ -40,6 +40,7 @@ module.exports = {
         'xs': '4rem',
         'img_width': '100px',
         'lg': "25rem",
+        'pop':"24rem"
        
       },
       margin:{

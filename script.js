@@ -36,6 +36,11 @@ btn.addEventListener('click', async (e) => {
     const email = document.getElementById('email').value;
     const message = document.getElementById('message').value;
 
+    if (name && email && message) {
+        // Show the "Thank You" message
+        document.getElementById('thankYouPopup').style.display = 'flex';
+    }
+
     const response = await fetch(`${backendUrl}/send`, {
         method: 'POST',
         headers: {
@@ -55,3 +60,7 @@ btn.addEventListener('click', async (e) => {
         toastr.error('There was an error with your submission');
     }
 });
+
+document.getElementById('thankYouPopupButton').addEventListener('click', function() {
+    document.getElementById('thankYouPopup').style.display = 'none';
+})
