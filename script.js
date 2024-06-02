@@ -64,7 +64,7 @@ btn.addEventListener('click', async (e) => {
 
     setTimeout(() => {
         btn.disabled = false;
-    }, 2000);
+    }, 4000);
 });
 
 
