@@ -36,10 +36,8 @@ btn.addEventListener('click', async (e) => {
     const email = document.getElementById('email').value;
     const message = document.getElementById('message').value;
 
-    if (name && email && message) {
-        // Show the "Thank You" message
-        document.getElementById('thankYouPopup').style.display = 'flex';
-    }
+    btn.disabled = true;
+
 
     const response = await fetch(`${backendUrl}/send`, {
         method: 'POST',
@@ -48,6 +46,10 @@ btn.addEventListener('click', async (e) => {
         },
         body: JSON.stringify({ names, email, message })
     });
+
+    document.getElementById('names').value = '';
+    document.getElementById('email').value = '';
+    document.getElementById('message').value = '';
 
     if (response.status === 400) {
         toastr.error('Please fill all inputs');
@@ -59,8 +61,10 @@ btn.addEventListener('click', async (e) => {
     } else {
         toastr.error('There was an error with your submission');
     }
+
+    setTimeout(() => {
+        btn.disabled = false;
+    }, 2000);
 });
 
-document.getElementById('thankYouPopupButton').addEventListener('click', function() {
-    document.getElementById('thankYouPopup').style.display = 'none';
-})
+
