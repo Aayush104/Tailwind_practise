@@ -25,6 +25,7 @@ document.addEventListener('click', (e) => {
     } else if (targetClassList.contains('nav_contact') || targetClassList.contains('foot_contact') || targetClassList.contains('btn_contact')) {
         scrollToSection(document.querySelector('.Contact'));
         handleMenu(document.getElementById('contact'));
+        handleMenu(document.getElementById('hire'));
     }
 });
 
